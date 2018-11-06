@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Description</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rooms}}
+    <tr>
+      <td><img src="{{this.imageUrl}}" height="100"></td>
+      <td>{{this.description}}</td>
+      <td>{{this.address}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
